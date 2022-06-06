@@ -61,13 +61,13 @@ while(True):
 			frame[y1:y2, x1:x2, c] = (alpha_s * emoji[:, :, c] + alpha_l * frame[y1:y2, x1:x2, c])
 
 		break
-
-  # Display the resulting frame
+	
+	# Display the resulting frame
 	cv2.imshow('Emotion filter', frame)
-      
-  # the 'q' button is set as the
-  # quitting button you may use any
-  # desired button of your choice
+	
+	# the 'q' button is set as the
+	# quitting button you may use any
+	# desired button of your choice
 	if cv2.waitKey(1) & 0xFF == ord('q'):
 		break
   
