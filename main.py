@@ -25,6 +25,7 @@ while(True):
 
 	# Draw rectangle around the faces
 	for (x,y,w,h) in faces:
+
 		# Crop the image frame into face section
 		roi_face = frame[y:y+h, x:x+w]
 
